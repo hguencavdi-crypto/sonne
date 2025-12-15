@@ -8,14 +8,20 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'sonne-primary': '#1a1a1a',
-        'sonne-secondary': '#f5f5f5',
-        'tisch-frei': '#10b981',
-        'tisch-besetzt': '#ef4444',
-        'tisch-reserviert': '#3b82f6',
-        'status-neu': '#f97316',
-        'status-zubereitung': '#eab308',
-        'status-fertig': '#22c55e',
+        // HASI Elektronic Farbschema
+        hasi: {
+          darkblue: '#1A365D',    // Header, Footer
+          blue: '#2C5282',        // Primärblau - Überschriften, Buttons
+          accent: '#3182CE',      // Akzentblau - Links, Hover
+          lightblue: '#D5E8F0',   // Hellblau - Hintergründe, Karten
+          green: '#2F855A',       // Erfolgsgrün - Checkmarks
+          yellow: '#D69E2E',      // Warngelb - Hinweise
+          text: '#2D3748',        // Textfarbe
+          gray: '#718096',        // Grautext - Sekundärtext
+        },
+      },
+      fontFamily: {
+        sans: ['Arial', 'Helvetica', 'sans-serif'],
       },
     },
   },

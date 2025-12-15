@@ -1,7 +1,7 @@
 {
-  "name": "sonne-restaurant",
+  "name": "hasi-elektronic",
   "version": "1.0.0",
-  "description": "Kellner-Küche System für Sonne Restaurant",
+  "description": "Offizielle Website für HASI Elektronic - IT-Dienstleistungen seit 1986",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

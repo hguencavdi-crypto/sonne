@@ -1,89 +1,126 @@
-# 🍽️ SONNE RESTAURANT - Bestellsystem
+# 🔧 HASI Elektronic - Offizielle Website
 
-Kellner-Küche-System für das Sonne Restaurant in Sersheim.
+Moderne Next.js-Website für HASI Elektronic - Ihr Technik-Partner in Vaihingen an der Enz seit 1986.
 
-## 🚀 SCHNELLSTART (3 SCHRITTE!)
+## 🏢 Über HASI Elektronic
 
-### SCHRITT 1: Supabase SQL ausführen
+**HASI Elektronic** ist ein traditionsreiches IT-Dienstleistungsunternehmen mit fast 40 Jahren Erfahrung in der Computer- und Elektronikbranche.
 
-1. Gehe zu https://supabase.com
-2. Öffne dein "Sone" Projekt
-3. Gehe zu SQL Editor
-4. Kopiere und führe die SQL aus `SUPABASE_SCHEMA.sql` aus
+- **Gegründet:** 1986
+- **Inhaber:** Hamdi Güncavdi
+- **Standort:** Grabenstraße 18, 71665 Vaihingen an der Enz, Deutschland
+- **Telefon:** 07042 / 16391
+- **E-Mail:** info@hasi-elektronic.de
+- **Website:** www.hasi-elektronic.de
 
-### SCHRITT 2: Environment Variables
+## 🚀 Features
 
-1. In Supabase: Settings → API
-2. Kopiere:
-   - Project URL
-   - anon public key
-3. Erstelle `.env.local` Datei:
-   ```
-   NEXT_PUBLIC_SUPABASE_URL=deine-url
-   NEXT_PUBLIC_SUPABASE_ANON_KEY=dein-key
-   ```
+✅ Vollständig deutschsprachige Website
+✅ Responsive Design (Mobile-First)
+✅ Moderne Next.js 14 Architektur
+✅ Tailwind CSS für schnelles Styling
+✅ SEO-optimiert für lokale Suche
+✅ DSGVO-konform
+✅ Schnelle Performance
 
-### SCHRITT 3: Auf Hostinger Horizon deployen
+## 📋 Hauptbereiche
 
-1. GitHub Repository erstellen
-2. Dieses Projekt hochladen
-3. In Hostinger Horizon:
-   - "Import from Git"
-   - Repository verbinden
-   - Environment Variables eintragen (siehe oben)
-   - Deploy!
+- **Startseite:** Übersicht über alle Services
+- **Leistungen:** PC-Reparatur, Datenrettung, IT-Sicherheit, Netzwerk
+- **Produkte:**
+  - 🔒 **Hasi Safe Stick** - Hochsicherer USB-Stick mit Doppelverschlüsselung (ab 59€)
+  - ☁️ **Hasi Cloud** - Sichere Cloud-Speicherlösung (ab 99€ netto)
+- **Über uns:** Firmengeschichte und Team
+- **Kontakt:** Kontaktformular und Anfahrt
+- **IT-Ratgeber:** Blog und Tipps
 
-## 📋 FEATURES
+## 🎨 Design
 
-✅ Admin Dashboard (Kellner verwalten, Tische sehen)
-✅ Kellner Interface (Bestellungen aufnehmen)
-✅ Küche Interface (Bestellungen bearbeiten)
-✅ 16 Tische (alle 4 Personen)
-✅ Komplettes Menü von Sonne Restaurant
-✅ Echtzeit-Synchronisation
-✅ Minimalistisches Design
+**Farbschema:**
+- Dunkelblau: `#1A365D` (Header, Footer)
+- Primärblau: `#2C5282` (Buttons, Überschriften)
+- Akzentblau: `#3182CE` (Links, Hover)
+- Hellblau: `#D5E8F0` (Hintergründe)
 
-## 🔑 STANDARD LOGIN
+## 🛠️ Tech Stack
 
-**Admin:**
-- Username: `Admin`
-- Password: `Admin`
+- **Framework:** Next.js 14
+- **Styling:** Tailwind CSS
+- **Icons:** React Icons / Heroicons
+- **State Management:** Zustand
+- **Forms:** React Hook Form
+- **Backend (optional):** Supabase
 
-⚠️ Nach erstem Login Passwort ändern!
-
-## 📁 DATEIEN
-
-```
-sonne-restaurant/
-├── app/
-│   ├── admin/         # Admin Dashboard
-│   ├── kellner/       # Kellner Interface
-│   ├── kueche/        # Küchen Interface
-│   ├── page.js        # Login
-│   ├── layout.js      # Root Layout
-│   └── globals.css    # Styles
-├── lib/
-│   └── supabase.js    # Database Client
-├── .env.example       # Environment Template
-├── package.json       # Dependencies
-└── SUPABASE_SCHEMA.sql # Database Schema
-```
-
-## 🛠️ LOKALER TEST (Optional)
+## 📦 Installation
 
 ```bash
+# Dependencies installieren
 npm install
+
+# Development Server starten
 npm run dev
+
+# Production Build erstellen
+npm run build
+
+# Production Server starten
+npm start
 ```
 
-Öffne: http://localhost:3000
+## 🌐 Deployment
 
-## 📞 SUPPORT
+Die Website kann auf verschiedenen Plattformen deployed werden:
 
-Bei Fragen: hamdi@example.com
+- **Vercel** (empfohlen für Next.js)
+- **Hostinger Horizon**
+- **Netlify**
+- **Eigener Server** (mit Node.js)
 
-**Entwickelt von Hamdi Güncavdi**
+## 📞 Support
+
+Bei Fragen zur Website:
+- **Developer:** Hamdi Güncavdi
+- **E-Mail:** info@hasi-elektronic.de
+- **Telefon:** 07042 / 16391
+
+## 📁 Projektstruktur
+
+```
+hasi-elektronic/
+├── app/                    # Next.js App Router
+│   ├── page.js            # Startseite
+│   ├── layout.js          # Root Layout
+│   ├── leistungen/        # Dienstleistungen
+│   ├── hasi-safe-stick/   # Produkt: Safe Stick
+│   ├── hasi-cloud/        # Produkt: Cloud
+│   ├── ueber-uns/         # Über uns
+│   ├── kontakt/           # Kontakt
+│   └── impressum/         # Rechtliches
+├── components/            # React Komponenten
+│   ├── layout/           # Header, Footer, Navigation
+│   ├── sections/         # Wiederverwendbare Sections
+│   └── ui/               # UI-Komponenten
+├── public/               # Statische Assets
+│   ├── images/          # Bilder
+│   └── icons/           # Icons
+├── docs/                # Dokumentation
+│   └── WEBSITE_DOKUMENTATION.md
+└── lib/                 # Utilities
+```
+
+## 🎯 USPs von HASI Elektronic
+
+- ✅ Kostenlose Erstdiagnose
+- ✅ Keine versteckten Kosten
+- ✅ Fast 40 Jahre Erfahrung
+- ✅ Persönlicher Service vor Ort
+- ✅ Regionale Verbundenheit
+
+## 📄 Lizenz
+
+© 2025 HASI Elektronic - Alle Rechte vorbehalten
 
 ---
 
-© 2025 Sonne Restaurant - Alle Rechte vorbehalten
+**"Wenn Technik streikt – sind wir da."**
+*Technik mit Vertrauen seit 1986*
